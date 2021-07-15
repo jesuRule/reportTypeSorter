@@ -1,6 +1,5 @@
 {
   "commandDescription": "order fields within a report type",
-  "nameFlagDescription": "report type to apply order for",
-  "forceFlagDescription": "example boolean flag",
+  "reportTypeNameDescription": "report type to apply order to",
   "errorNoOrgResults": "No results found for the org '%s'."
 }
