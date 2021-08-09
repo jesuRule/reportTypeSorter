@@ -1,5 +1,11 @@
 {
   "commandDescription": "order fields within a report type",
   "reportTypeNameDescription": "report type to apply order to",
-  "errorNoOrgResults": "No results found for the org '%s'."
+  "unableToFindReportType": "Unable to find the requested Report Type",
+  "ordering": "Applying alphabetical order",
+  "deployRequested": "Deploying Report Type to '%s' with ID '%s'",
+  "unableToDeployReportType": "Unable to deploy ReportType:'%s'",
+  "reportTypeSorted": "Report Type '%s' sorted",
+  "retrieving": "Retrieving Report Type...",
+  "deploying": "Deploying..."
 }
