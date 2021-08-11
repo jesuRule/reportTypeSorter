@@ -5,7 +5,5 @@
   "ordering": "Applying alphabetical order",
   "deployRequested": "Deploying Report Type to '%s' with ID '%s'",
   "unableToDeployReportType": "Unable to deploy ReportType:'%s'",
-  "reportTypeSorted": "Report Type '%s' sorted",
-  "retrieving": "Retrieving Report Type...",
-  "deploying": "Deploying..."
+  "reportTypeSorted": "Report Type '%s' sorted"
 }
