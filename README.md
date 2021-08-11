@@ -17,11 +17,11 @@ Apply alphabetical order to Report Type fields
 <!-- install -->
 <!-- usage -->
 ```sh-session
-$ npm install -g reportTypeSorter
+$ npm install -g report-type-sorter
 $ sfdx COMMAND
 running command...
 $ sfdx (-v|--version|version)
-reportTypeSorter/0.0.0 win32-x64 node-v14.17.1
+report-type-sorter/0.0.0 win32-x64 node-v14.17.1
 $ sfdx --help [COMMAND]
 USAGE
   $ sfdx COMMAND
