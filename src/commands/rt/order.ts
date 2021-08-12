@@ -120,10 +120,8 @@ export default class Org extends SfdxCommand {
             try {
               labels[column.field[0] + column.table[0]] = await getReportTypeLabel(column.field[0], column.table[0]);
             } catch (error) {
-              // console.log('error abajo');
               labels[column.field[0] + column.table[0]] = column.field[0];
             }
-            // console.log(`${column.field[0]}-${column.table[0]} -> ${labels[column.field[0] + column.table[0]]}`);
           }
           
           section.columns.sort((a, b) => {
