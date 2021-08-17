@@ -29,7 +29,7 @@ const objectDescribe = {};
 const searchNames = {};
 let conn;
 
-export default class ReportTypeSorter extends SfdxCommand {
+export default class RtOrder extends SfdxCommand {
   public static description = messages.getMessage('commandDescription');
 
   public static examples = [
