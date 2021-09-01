@@ -14,7 +14,6 @@ const checkDeploymentStatus = async (conn: Connection, retrievedId: string): Pro
     });
 
     if (!deployResult.done) {
-      console.log('Deploying...');
       await delay(5000);
     } else {
       break;

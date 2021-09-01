@@ -14,7 +14,6 @@ const checkRetrievalStatus = async (conn: Connection, retrievedId: string): Prom
     });
 
     if (metadataResult.done === 'false') {
-      console.log('Retrieving Report Type...');
       await delay(5000);
     } else {
       break;

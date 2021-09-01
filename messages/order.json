@@ -3,6 +3,8 @@
   "reportTypeNameDescription": "report type to apply order to",
   "unableToFindReportType": "Unable to find the requested Report Type",
   "ordering": "Applying alphabetical order",
+  "retrieveInProgress": "Retrieving Report Type",
+  "done": "Done",
   "deployRequested": "Deploying Report Type to '%s' with ID '%s'",
   "unableToDeployReportType": "Unable to deploy ReportType:'%s'",
   "reportTypeSorted": "Report Type '%s' sorted"

@@ -86,7 +86,9 @@ export default class RtOrder extends SfdxCommand {
       retrieveId = result.id;
     });
 
+    this.ux.startSpinner(messages.getMessage('retrieveInProgress'));
     const retrieveResult = await checkRetrievalStatus(conn, retrieveId);
+    this.ux.stopSpinner(messages.getMessage('done'));
     if (!Array.isArray(retrieveResult.fileProperties)) {
       throw new SfdxError(messages.getMessage('unableToFindReportType'));
     }
@@ -109,7 +111,8 @@ export default class RtOrder extends SfdxCommand {
 
     const resultFile = path.join(extractFolder, 'reportTypes', `${this.flags.reporttypename}.reportType`);
 
-    this.ux.log(messages.getMessage('ordering'));
+    this.ux.startSpinner(messages.getMessage('ordering'));
+
     const xmlString = fs.readFileSync(resultFile, 'utf8');
 
     await new xml2js.Parser().parseStringPromise(xmlString)
@@ -139,6 +142,8 @@ export default class RtOrder extends SfdxCommand {
         throw new SfdxError(error);
       });
 
+    this.ux.stopSpinner(messages.getMessage('done'));
+
     // Zip result
     const zipFile = path.join(tempFolder, 'package.zip');
     await zipper.zip(extractFolder, zipFile);
@@ -159,13 +164,14 @@ export default class RtOrder extends SfdxCommand {
       }
     );
 
-    this.ux.log(messages.getMessage('deployRequested', [this.org.getUsername(), deployId.id]));
+    this.ux.startSpinner(messages.getMessage('deployRequested', [this.org.getUsername(), deployId.id]));
     const deployResult: DeployResult = await checkDeploymentStatus(conn, deployId.id);
     if (!deployResult.success) {
       throw new SfdxError(
         messages.getMessage('unableToDeployReportType', [deployResult.details['componentFailures']['problem']])
       );
     }
+    this.ux.stopSpinner(messages.getMessage('done'));
 
     this.ux.log(messages.getMessage('reportTypeSorted', [this.flags.reporttypename]));
 
