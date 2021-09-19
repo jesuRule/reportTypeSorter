@@ -1,7 +1,7 @@
 {
   "name": "report-type-sorter",
   "description": "Apply alphabetical order to Report Type fields",
-  "version": "0.0.0",
+  "version": "0.0.3",
   "author": "Jesus Blanco",
   "bugs": "https://github.com/jesuRule/reportTypeSorter/issues",
   "dependencies": {
@@ -82,6 +82,6 @@
     "posttest": "eslint src/**/*.ts test/**/*.ts",
     "prepack": "rimraf lib && tsc && oclif-dev manifest && oclif-dev readme",
     "test": "nyc --extension .ts --require ts-node/register mocha --forbid-only \"test/**/*.test.ts\"",
-    "version": "oclif-dev readme && git add README.md"
+    "version": "git add README.md"
   }
 }
