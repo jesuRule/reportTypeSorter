@@ -33,9 +33,8 @@ export default class RtOrder extends SfdxCommand {
 
   public static examples = [
     `$ sfdx rt:order --targetusername myOrg@example.com -r Service_Contracts_with_Entitlements
-    Applying alphabetical order
-    Deploying Report Type to alice@s4g.es with ID 0Af3X00000dpGJMSA2
-    Deploying...
+    Applying alphabetical order... Done
+    Deploying Report Type to alice@s4g.es with ID 0Af3X00000dpGJMSA2... Done
     Report Type Service_Contracts_with_Entitlements sorted
     `,
   ];
