@@ -17,7 +17,7 @@ Apply alphabetical order to Report Type fields
 <!-- install -->
 <!-- usage -->
 ```sh-session
-$ npm install -g report-type-sorter
+$ sfdx plugins:install report-type-sorter
 $ sfdx COMMAND
 running command...
 $ sfdx (-v|--version|version)
