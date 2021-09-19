@@ -11,12 +11,11 @@ import { AsyncResult, DeployResult } from 'jsforce';
 import { checkRetrievalStatus } from '../../utils/metadataRetrieve';
 import { checkDeploymentStatus } from '../../utils/metadataDeploy';
 import { unzip } from '../../utils/zip';
-
-const xml2js = require('xml2js');
-const fs = require('fs');
-const os = require('os');
-const path = require('path');
-const zipper = require('zip-a-folder');
+import * as xml2js from "xml2js";
+import * as fs from "fs";
+import * as os from "os";
+import * as path from "path";
+import * as zipper from "zip-a-folder";
 
 // Initialize Messages with the current plugin directory
 Messages.importMessagesDirectory(__dirname);
