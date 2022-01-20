@@ -12,7 +12,7 @@ Apply alphabetical order to Report Type fields
 [![License](https://img.shields.io/npm/l/reportTypeSorter.svg)](https://github.com/jesuRule/reportTypeSorter/blob/master/package.json)
 
 <!-- toc -->
-* [Debugging your plugin](#debugging-your-plugin)
+
 <!-- tocstop -->
 <!-- install -->
 <!-- usage -->
