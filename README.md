@@ -1,16 +1,11 @@
 reportTypeSorter
 ================
 
-Apply alphabetical order to Report Type fields
+This SFDX plugins helps you to sort fields alphabetically in a Report Type.
 
-[![Version](https://img.shields.io/npm/v/reportTypeSorter.svg)](https://npmjs.org/package/reportTypeSorter)
-[![CircleCI](https://circleci.com/gh/jesuRule/reportTypeSorter/tree/master.svg?style=shield)](https://circleci.com/gh/jesuRule/reportTypeSorter/tree/master)
-[![Appveyor CI](https://ci.appveyor.com/api/projects/status/github/jesuRule/reportTypeSorter?branch=master&svg=true)](https://ci.appveyor.com/project/heroku/reportTypeSorter/branch/master)
-[![Greenkeeper](https://badges.greenkeeper.io/jesuRule/reportTypeSorter.svg)](https://greenkeeper.io/)
-[![Known Vulnerabilities](https://snyk.io/test/github/jesuRule/reportTypeSorter/badge.svg)](https://snyk.io/test/github/jesuRule/reportTypeSorter)
-[![Downloads/week](https://img.shields.io/npm/dw/reportTypeSorter.svg)](https://npmjs.org/package/reportTypeSorter)
-[![License](https://img.shields.io/npm/l/reportTypeSorter.svg)](https://github.com/jesuRule/reportTypeSorter/blob/master/package.json)
+⚠ _Some standard fields are not sorted correctly due to an inconsistency in Salesforce API's. For example for Account.Type field, the UI label is `Type` but Salesforce API's provide `Account Type` instead, so it would be wrongly placed within the Report Type._
 
+# Usage
 <!-- toc -->
 
 <!-- tocstop -->
@@ -28,6 +23,8 @@ USAGE
 ...
 ```
 <!-- usagestop -->
+
+# Commands
 <!-- commands -->
 * [`sfdx rt:order -r <string> [-u <string>] [--apiversion <string>] [--json] [--loglevel trace|debug|info|warn|error|fatal|TRACE|DEBUG|INFO|WARN|ERROR|FATAL]`](#sfdx-rtorder--r-string--u-string---apiversion-string---json---loglevel-tracedebuginfowarnerrorfataltracedebuginfowarnerrorfatal)
 
